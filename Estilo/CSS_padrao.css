@@ -1,0 +1,57 @@
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: orangered;
+}
+img {
+    width: 100%;
+}
+header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+header div {
+    width: 33.3%;
+}
+header img {
+    height: 60px;
+    width: auto;
+}
+header p {
+    margin: 5px;
+}
+#tema, #sombra, #cor {
+    width: 80%;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: inherit;
+    border: 2px solid orangered;
+}
+#cor {
+    width: 60%;
+}
+#img_destaque {
+    padding-top: 150px;
+    width: 80%;
+}
+.sombra_texto {
+    text-shadow: 4px 1px snow;
+}
+
+@media (min-width: 768px) {
+  #tema, #sombra, #cor {
+      width: 50%;
+      font-size: 1rem;
+  }  
+  #cor, #img_destaque {
+      width: 30%;
+  }
+}

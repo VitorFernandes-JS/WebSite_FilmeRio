@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rio</title>
+        <link rel="stylesheet" type="text/css" href="Estilo/CSS_padrao.css" />
+        <link id="CSS_tema" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="Imagens/Blu1.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="Scripts/jscript.js"></script>
+
+    </head>
+    <body>
+        <header>
+           <div>
+              <p><input type="checkbox" id="borda" 
+                onclick="funBorda()" />
+                Borda
+                <select id="cor" disabled onchange="funCorBorda()">
+                 <option value="" selected disabled>Cor...</option>
+                  <option value="yellow">Amarela</option>
+                  <option value="white">Branca</option>
+                  <option value="hotpink">Rosa</option>
+                </select> 
+                </p>
+                 <p><input type="button" id="sombra" value="Adiciona Sombra" onclick="funSombra()"/> </p>
+           </div>
+
+           <div>
+                <img src="Imagens/Logo_Cabec.png" alt="Rio" />
+           </div>
+
+           <div>
+             <select id="tema" onchange="funTrocaTema(this.value)">
+            <option value="" selected disabled>Selecione o tema...</option>
+            <option value="Blu">Blu</option>
+            <option value="Rafael">Rafael</option>
+            <option value="Rio">Rio</option> 
+            </select>
+           </div> 
+        </header>
+
+         <img id="img_destaque" />
+         <h1 id="texto_destaque" ></h1>
+         <script> funTrocaTema("Rio"); </script>
+          
+
+    </body>
+</html>
